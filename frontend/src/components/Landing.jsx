@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Landing = () => {
     return (
@@ -15,9 +16,9 @@ export const Landing = () => {
                 <p className="text-md text-gray-600 mb-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <button className="px-6 py-3 text-lg text-white bg-yellow-500 rounded hover:bg-yellow-600">
-                    Get Started
-                </button>
+                <Link to={'/about'} className="px-6 py-3 text-lg text-white bg-yellow-500 rounded hover:bg-yellow-600">
+                    Read More
+                </Link>
             </div>
         </div>
     );

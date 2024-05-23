@@ -1,26 +1,33 @@
 import React from 'react';
+import { FaRocket } from 'react-icons/fa';
+import { Tooltip } from 'react-tooltip';
 
 export const ImageUpload = () => {
+  const handleRedirect = () => {
+    window.location.href = 'https://bike-model-kxhqhrqe4syrpsgogvvv5j.streamlit.app/';
+  };
+
   return (
-    <div className="mx-auto p-8 bg-white rounded-lg">
-      <h1 className="text-3xl font-bold text-left text-gray-800 mb-14 ml-44">Give It a Try</h1>
-      <div className="mb-6 flex items-center justify-center gap-32">
-        <div className="flex flex-col gap-6">
-          <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold w-[60vh] py-2 px-6 rounded transition duration-200">
-            Upload Image
+    <div className="mx-auto p-8 bg-white rounded-lg shadow-lg max-w-4xl">
+      <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">Give It a Try</h1>
+      <p className="text-center text-gray-600 mb-12">
+        Discover the power of our tool by launching the application below. Upload your images and explore the possibilities!
+      </p>
+      <div className="flex flex-col items-center">
+        <div className="flex items-center justify-center mb-6">
+          <button
+            onClick={handleRedirect}
+            className="bg-gradient-to-r from-yellow-500 to-yellow-700 hover:from-yellow-600 hover:to-yellow-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
+            data-tooltip-id="launch-tooltip"
+          >
+            <FaRocket className="text-xl" />
+            Launch App
           </button>
-          <input
-            type="text"
-            placeholder="Specify image URL"
-            className="border border-gray-300 p-3 rounded w-[60vh] focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <Tooltip id="launch-tooltip" place="top" effect="solid">
+            Click to explore our Streamlit app!
+          </Tooltip>
         </div>
-        <div className="flex flex-col items-center justify-center border-dashed border-2 cursor-pointer border-gray-300 p-6 h-[50vh] w-[70vh] text-gray-500 rounded-lg bg-gray-50 hover:bg-yellow-100 transition duration-200">
-          <div className="text-center">
-            <p className="mb-2 text-gray-700">Drag image here</p>
-            <p className="text-sm text-gray-500">or click to browse</p>
-          </div>
-        </div>
+
       </div>
     </div>
   );
