@@ -8,6 +8,10 @@ export const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="w-screen text-white p-4 border-b-2 border-gray-100">
       <div className="container mx-auto flex justify-between items-center">
@@ -47,14 +51,14 @@ export const Header = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <nav className="flex flex-col space-y-2 p-4 text-right">
-            <Link to="/about" className="text-black px-3 py-2 rounded hover:text-yellow-500 font-bold">
+          <nav className="flex text-right flex-col space-y-2 p-4">
+            <Link to="/about" onClick={closeMenu} className="text-black px-3 py-2 rounded hover:text-yellow-500 font-bold">
               About
             </Link>
-            <Link to="/faq" className="text-black px-3 py-2 rounded hover:text-yellow-500 font-bold">
+            <Link to="/faq" onClick={closeMenu} className="text-black px-3 py-2 rounded hover:text-yellow-500 font-bold">
               FAQ
             </Link>
-            <Link to="/support" className="text-black px-3 py-2 rounded hover:text-yellow-500 font-bold">
+            <Link to="/support" onClick={closeMenu} className="text-black px-3 py-2 rounded hover:text-yellow-500 font-bold">
               Support
             </Link>
           </nav>
@@ -63,4 +67,3 @@ export const Header = () => {
     </header>
   );
 };
-

@@ -13,7 +13,7 @@ export function FAQLanding() {
                     FAQ
                 </h1>
                 <p className="text-sm md:text-md text-gray-600 mb-6 md:mb-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore placeat asperiores distinctio consectetur delectus dignissimos qui iure voluptate in.
+                    Have questions about our service? Our FAQ section provides answers to the most common inquiries. From account setup to troubleshooting, find all the information you need to make the most of our platform.                
                 </p>
             </div>
         </div>

@@ -28,7 +28,7 @@ export const FAQSection = () => {
 
     return (
         <div className="max-w-4xl mx-auto mt-4 mb-10 p-4 sm:p-6 lg:p-8">
-            <p className="text-center mt-6 text-xl lg:text-2xl font-bold">Frequently Asked Questions</p>
+            <p className="text-center mt-6 text-xl lg:text-2xl font-bold mb-6">Frequently Asked Questions</p>
             {faqData.map((item, index) => (
                 <div key={index} className={`faq my-2 ${activeIndex === index ? 'border-none' : 'border border-gray-300'} rounded-lg`}>
                     <button

@@ -7,7 +7,7 @@ export function ChooseUs() {
         <img
           src="/choose.jpg"
           alt="First"
-          className="h-[20rem] md:h-[25rem] lg:h-[30rem] object-cover w-full lg:w-auto"
+          className="h-[20rem] md:h-[20rem] lg:h-[25rem] object-cover w-full rounded-2xl lg:w-auto"
         />
         <div className="text-center lg:text-left mt-8 lg:mt-0 lg:ml-8">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500">
