@@ -14,8 +14,7 @@ export const Landing = () => {
             <div className="md:w-1/2 text-right mt-8 md:mt-0 flex-col justify-end">
                 <h1 className="text-4xl font-bold text-gray-800 mb-4">Model Minder</h1>
                 <p className="text-md text-gray-600 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
+                    Our project is entitled “Model Minder”. It is a pioneering project centered around utilizing the ResNet deep learning architecture for accurate vehicle identification.                </p>
                 <Link to={'/about'} className="px-6 py-3 text-lg text-white bg-yellow-500 rounded hover:bg-yellow-600">
                     Read More
                 </Link>
