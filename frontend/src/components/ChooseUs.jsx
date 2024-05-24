@@ -2,17 +2,25 @@ import React from "react";
 
 export function ChooseUs() {
   return (
-    <div className="bg-white h-[70vh] w-full mt-12">
-      <div className="flex items-center justify-evenly w-[80%] ml-32">
-        <img src='/choose.jpg' alt="First" className="h-[30rem] object-cover" />
-        <div>
-          <h1 className="text-5xl font-bold text-yellow-500 "> Why Choose Us?</h1>
-          <div className="ml-8 mt-8 leading-[3rem] font-extrabold text-xl text-zinc-700">
-            <li> Lorem ipsum dolor sit.</li>
-            <li> Lorem, ipsum dolor.</li>
-            <li> Lorem ipsum dolor sit amet.</li>
-            <li> Lorem, ipsum dolor.</li>
-            <li> Lorem ipsum dolor sit.</li>
+    <div className="bg-white h-auto w-full mt-12">
+      <div className="flex flex-col lg:flex-row items-center justify-evenly w-[90%] lg:w-[80%] mx-auto">
+        <img
+          src="/choose.jpg"
+          alt="First"
+          className="h-[20rem] md:h-[25rem] lg:h-[30rem] object-cover w-full lg:w-auto"
+        />
+        <div className="text-center lg:text-left mt-8 lg:mt-0 lg:ml-8">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500">
+            Why Choose Us?
+          </h1>
+          <div className="mt-4 md:mt-6 lg:mt-8 leading-8 md:leading-9 lg:leading-[3rem] font-extrabold text-lg md:text-xl text-zinc-700">
+            <ul className="list-none space-y-4">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
           </div>
         </div>
       </div>
