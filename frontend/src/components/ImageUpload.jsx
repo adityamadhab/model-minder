@@ -4,7 +4,7 @@ import { Tooltip } from 'react-tooltip';
 
 export const ImageUpload = () => {
   const handleRedirect = () => {
-    window.location.href = 'https://bike-model-kxhqhrqe4syrpsgogvvv5j.streamlit.app/';
+    window.location.href = 'https://model-minder-model-u35fmhqqyrxhjhfu6ynypz.streamlit.app/';
   };
 
   return (
